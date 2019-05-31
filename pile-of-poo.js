@@ -8,7 +8,7 @@ var replaceSmellIndicators = function() {
 	for (let i = 0; i < cardDaysIndicators.length; i++) {
 	    let cardDaysIndicator = cardDaysIndicators[i];
 	    let cardDays = parseInt(cardDaysIndicator.title.replace(/ days? in this column/, ""));
-	    cardDaysIndicator.innerHTML = smellIndicator.repeat(cardDays);
+	    cardDaysIndicator.textContent = smellIndicator.repeat(cardDays);
 	}
 
     });
