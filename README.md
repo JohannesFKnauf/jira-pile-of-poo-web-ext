@@ -2,7 +2,11 @@
 
 A browser extension for chrome and firefox decorating Jira tickets in Agile Boards with a smelly pile of poo per day in column.
 
+For more motivation, read the [blog post about JIRA Pile of Poo](https://metamorphant.de/blog/posts/2019-05-24-jira-pile-of-poo-extension/).
+
 ## Installing the distribution
+
+See [JIRA Pile of Poo Mozilla Addons page](https://addons.mozilla.org/en-US/firefox/addon/jira-pile-of-poo/).
 
 ## Getting started with development
 
