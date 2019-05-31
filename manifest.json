@@ -1,0 +1,35 @@
+{
+
+    "manifest_version": 2,
+    "name": "JIRA Pile of Poo",
+    "version": "1.0",
+
+    "description": "Replaces boring grey and red dots for overdue tickets with smelly piles of poo (or any other UTF-8 character of your choice).",
+    "homepage_url": "https://github.com/JohannesFKnauf/jira-pile-of-poo-web-ext",
+    
+    "icons": {
+	"48": "icons/pile-of-poo-48.png",
+	"96": "icons/pile-of-poo-96.png"
+    },
+
+    "content_scripts": [
+	{
+	    "matches": ["*://*/secure/RapidBoard.jspa?rapidView=*"],
+	    "js": ["pile-of-poo.js"]
+	}
+    ],
+    
+    "options_ui": {
+      "page": "options.html",
+      "browser_style": true
+    },
+    "permissions": [
+	"storage"
+    ],
+    "browser_specific_settings": {
+	"gecko": {
+	    "id": "jira-pile-of-poo@metamorphant.de",
+	    "strict_min_version": "42.0"
+	}
+    }
+}
