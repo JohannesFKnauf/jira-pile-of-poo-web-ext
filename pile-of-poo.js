@@ -1,7 +1,5 @@
-
 var replaceSmellIndicators = function() {
-    var gettingItem = browser.storage.sync.get('smellindicator');
-    gettingItem.then((res) => {
+    chrome.storage.sync.get('smellindicator', (res) => {
 	var smellIndicator = res.smellindicator || '💩';
 
 	var cardDaysIndicators = document.getElementsByClassName("ghx-days");
@@ -10,7 +8,6 @@ var replaceSmellIndicators = function() {
 	    let cardDays = parseInt(cardDaysIndicator.title.replace(/ days? in this column/, ""));
 	    cardDaysIndicator.textContent = smellIndicator.repeat(cardDays);
 	}
-
     });
 };
 
