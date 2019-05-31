@@ -1,5 +1,4 @@
 function saveOptions(e) {
-    console.log(document.querySelector("#smellindicator").value);
     browser.storage.sync.set({
 	smellindicator: document.querySelector("#smellindicator").value
     });
