@@ -28,4 +28,9 @@ If you are using Ubuntu Linux, you will probably want to install the [Firefox De
 
 ## Limitations
 
-While Web Extensions are in principle portable between browsers with minor adjustments, the Jira Pile of Poo extension has not been ported to more exotic browsers, yet. We are happy about pull requests.
+* Only chrome and firefox: While Web Extensions are in principle portable between browsers with minor adjustments, the Jira Pile of Poo extension has not been ported to more exotic browsers, yet. We are happy about pull requests.
+* Only Jira Data Center: Feel free to file a PR for Jira Cloud.
+
+## Testing with Jira
+
+If you don't have a Jira instance at hand, install a [Jira Software Data Center trial version](https://www.atlassian.com/software/jira/download/data-center). Just follow Atlassian's instructions.
