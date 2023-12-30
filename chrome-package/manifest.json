@@ -8,21 +8,22 @@
     "homepage_url": "https://github.com/JohannesFKnauf/jira-pile-of-poo-web-ext",
     
     "icons": {
-	"48": "icons/pile-of-poo-48.png",
-	"96": "icons/pile-of-poo-96.png"
+				"48": "icons/pile-of-poo-48.png",
+				"96": "icons/pile-of-poo-96.png",
+				"128": "icons/pile-of-poo-128.png"
     },
 
     "content_scripts": [
-	{
-	    "matches": ["*://*/secure/RapidBoard.jspa?rapidView=*"],
-	    "js": ["pile-of-poo.js"]
-	}
+				{
+						"matches": ["*://*/secure/RapidBoard.jspa?*rapidView=*"],
+						"js": ["pile-of-poo.js"]
+				}
     ],
     
     "options_ui": {
-      "page": "options.html"
+				"page": "options.html"
     },
     "permissions": [
-	"storage"
+				"storage"
     ]
 }
