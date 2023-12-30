@@ -34,3 +34,16 @@ If you are using Ubuntu Linux, you will probably want to install the [Firefox De
 ## Testing with Jira
 
 If you don't have a Jira instance at hand, install a [Jira Software Data Center trial version](https://www.atlassian.com/software/jira/download/data-center). Just follow Atlassian's instructions.
+
+## Packaging for Chrome
+
+* Switch to branch [`chrome`](https://github.com/JohannesFKnauf/jira-pile-of-poo-web-ext/tree/chrome)
+* Migrate changes from branch `master`
+* Open chromium developer version, or install it e.g. using `npx @puppeteer/browsers install chrome@stable`
+* Open [chrome://extensions/](chrome://extensions/)
+* Turn on developer mode (toggle in the upper right corner of the window)
+* "Load unpacked"
+* Choose the directory `chrome-package/` in your repo checkout
+* "Pack extension" and follow instructions
+* Open [Chrome developer console](https://chrome.google.com/webstore/devconsole/)
+* Update plugin
