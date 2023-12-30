@@ -45,5 +45,6 @@ If you don't have a Jira instance at hand, install a [Jira Software Data Center 
 * "Load unpacked"
 * Choose the directory `chrome-package/` in your repo checkout
 * "Pack extension" and follow instructions
+* Package the resulting `.crx` file and the manifest in a zip file
 * Open [Chrome developer console](https://chrome.google.com/webstore/devconsole/)
-* Update plugin
+* Update plugin (resp. submit for review)
